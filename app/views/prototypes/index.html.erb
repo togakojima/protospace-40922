@@ -1,5 +1,6 @@
 <main class="main">
   <div class="inner">
+    <%= link_to 'ついったー', "https://twitter.com/share?url=#{request.original_url}", title: 'Twitter', target: '_blank' %>
     <% if user_signed_in? %>
      <%# ログインしているときは以下を表示する %>
       <div class="greeting">
